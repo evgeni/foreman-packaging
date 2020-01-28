@@ -655,3 +655,4 @@ whitelist =
   python-urllib3
   python-whitenoise
   python-yarl
+  python-zipp
