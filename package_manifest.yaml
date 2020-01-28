@@ -1095,6 +1095,7 @@ pulpcore_packages:
     python-pyjwt: {}
     python-pymongo: {}
     python-pyparsing: {}
+    python-pyrsistent: {}
     python-pytz: {}
     python-pyyaml: {}
     python-redis: {}
