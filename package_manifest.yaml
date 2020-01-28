@@ -1093,6 +1093,7 @@ pulpcore_packages:
     python-pygtrie: {}
     python-pyjwkest: {}
     python-pyjwt: {}
+    python-pymongo: {}
     python-pyparsing: {}
     python-pytz: {}
     python-pyyaml: {}
