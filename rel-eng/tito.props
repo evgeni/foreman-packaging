@@ -1166,6 +1166,7 @@ whitelist =
   python-attrs
   python-backoff
   python-bleach
+  python-bleach-whitelist
   python-box
   python-cffi
   python-chardet
