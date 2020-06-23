@@ -1190,6 +1190,7 @@ whitelist =
   python-et-xmlfile
   python-flake8
   python-future
+  python-galaxy-importer
   python-gnupg
   python-gunicorn
   python-idna
