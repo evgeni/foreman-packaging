@@ -1161,6 +1161,7 @@ whitelist =
   python-aiodns
   python-aiofiles
   python-aiohttp
+  python-ansible
   python-async-timeout
   python-attrs
   python-backoff
