@@ -1205,6 +1205,7 @@ whitelist =
   python-markdown
   python-markuppy
   python-markupsafe
+  python-mccabe
   python-mongoengine
   python-multidict
   python-odfpy
