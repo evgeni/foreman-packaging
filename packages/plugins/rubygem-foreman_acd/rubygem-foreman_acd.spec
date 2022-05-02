@@ -100,7 +100,7 @@ cp -pa .%{gem_dir}/* \
         %{buildroot}%{gem_dir}/
 
 %foreman_bundlerd_file
-%foreman_precompile_plugin -a -s
+%foreman_precompile_plugin -s
 
 mkdir -p %{buildroot}%{_root_localstatedir}/lib/foreman/%{gem_name}/ansible-playbooks/
 
@@ -117,8 +117,6 @@ mkdir -p %{buildroot}%{_root_localstatedir}/lib/foreman/%{gem_name}/ansible-play
 %exclude %{gem_cache}
 %{gem_spec}
 %{foreman_bundlerd_plugin}
-%{foreman_apipie_cache_foreman}
-%{foreman_apipie_cache_plugin}
 %{foreman_assets_plugin}
 %{foreman_webpack_plugin}
 %{foreman_webpack_foreman}
@@ -134,6 +132,7 @@ mkdir -p %{buildroot}%{_root_localstatedir}/lib/foreman/%{gem_name}/ansible-play
 %changelog
 * Mon May 02 2022 Bernhard Suttner <suttner@atix.de> 0.9.2.3-1
 - Update to 0.9.2.3
+- Stop generaing apipie cache
 
 * Tue Oct 05 2021 Bernhard Suttner <suttner@atix.de> 0.9.0-1
 - Update to 0.9.0
