@@ -51,12 +51,12 @@ jobs:
   bump_plugin_deb:
     name: 'Bump ${{ matrix.package_name }} deb ${{ matrix.new_version }}'
     needs: deb_list
-    if: ${{ false }}
+    if: ${{ needs.deb_list.outputs.matrix != '[]' }}
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
       matrix:
-        include: ${{ fromJson(needs.deb_list.outputs.matrix) || fromJson('[{"dummy":"true"]') }}
+        include: ${{ fromJson(needs.deb_list.outputs.matrix) }}
     steps:
     - name: Update package
       run: echo "$(basename ${{ matrix.directory }})" --version "${{ matrix.new_version }}"
