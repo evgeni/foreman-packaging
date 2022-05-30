@@ -74,7 +74,7 @@ jobs:
   bump_plugin_deb:
     name: 'Bump ${{ matrix.package_name }} deb ${{ matrix.new_version }}'
     needs: deb_list
-    if: needs.deb_list.outputs.matrix
+    if: ${{ needs.deb_list.outputs.matrix != fromJSON('[]') }}
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
