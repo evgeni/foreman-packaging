@@ -23,7 +23,7 @@ jobs:
   bump_rpm:
     name: 'Bump ${{ matrix.package_name }} RPM ${{ matrix.new_version }}'
     needs: rpm_list
-    if: needs.rpm_list.outputs.matrix
+    if: ${{ needs.rpm_list.outputs.matrix != '[]' }}
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
