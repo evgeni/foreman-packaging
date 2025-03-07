@@ -125,6 +125,11 @@ foreman-installer --scenario katello --migrations-only > /dev/null
 %{_datadir}/%{name}/parser_cache/foreman-proxy-certs.yaml
 %{_sbindir}/foreman-proxy-certs-generate
 
+# foreman-certs
+%{_datadir}/%{name}/foreman-certs
+%{_datadir}/%{name}/parser_cache/foreman-certs.yaml
+%{_sbindir}/foreman-certs
+
 %changelog
 * Tue Feb 18 2025 Patrick Creech <pcreech@redhat.com> - 1:3.15.0-0.1.develop
 - Bump version to 3.15-develop
